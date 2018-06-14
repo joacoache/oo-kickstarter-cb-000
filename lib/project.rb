@@ -1,5 +1,5 @@
 class Project
-  attr_accessor :title
+  attr_accessor :title, :backers
 
   @backers = []
 
@@ -11,6 +11,6 @@ class Project
     @backers << backer
     backer.back_project(self)
   end
-  
+
 
 end
